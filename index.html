@@ -1,34 +1,25 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "University of California, San Francisco"
-address: Mission Hall, 550 16th Street, San Francisco
+venue: "Northeastern University, College of Engineering"
+address: 
 country: "us"
 language: "en"
-latlng: "37.767411, -122.390344"
-humandate: "Apr 29-30th, 2016"
+latlng: ""
+humandate: "Aug 29-30th, 2016"
 humantime: "9:00 am - 5:00 pm"
-startdate: 2016-04-29
-enddate: 2016-04-30
+startdate: 2016-08-29
+enddate: 2016-08-30
 instructor:
     -  "David Dotson"
-    -  "Byron Smith"
-    -  "Becca Tarvin"
-    -  "Kevin Vilbig"
+    -  "Varda Faghir"
 helper:
-    - Alex Williams
-    - Jiashun Zheng
-    -  "Ian Driver"
-contact: ariel.deardorff@ucsf.edu
-etherpad1: http://pad.software-carpentry.org/2016-04-29-ucsf-room1
-etherpad2: http://pad.software-carpentry.org/2016-04-29-ucsf-room2
+contact: j.bardhan@asu.edu
+etherpad: 
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 
-
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
-
-
 
 <!--
   HEADER
@@ -96,15 +87,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       will be presented at the workshop.</strong>
 </p>
 
-<p>
-  The course has two choices for the Python lesson: <strong>introductory</strong> or 
-  <strong>intermediate</strong>. The introductory lesson assumes no programming
-  experience, while the intermediate lesson assumes that learners have some
-  background in programming (though not necessarily Python). Both will teach
-  assuming little or no specific Python experience, but the pace and content
-  will differ.
-</p>
-
 <!--
   LOCATION
 
@@ -130,7 +112,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
+<strong>Requirements:</strong> Participants <strong>must</strong> bring a laptop with a
   Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
@@ -208,7 +190,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <tr> <td>09:00</td>  <td colspan="2">Automating tasks with the Unix shell</td> </tr>
       <tr> <td>10:30</td>  <td colspan="2">Coffee</td> </tr>
       <tr> <td>12:00</td>  <td colspan="2">Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Introduction to Python</td> <td>Intermediate Scientific Python</td> </tr>
+      <tr> <td>13:00</td>  <td>Introduction to Python</td> </tr>
       <tr> <td>14:30</td>  <td colspan="2">Coffee</td> </tr>
       <tr> <td>16:00</td>  <td colspan="2">Wrap-up</td> </tr>
     </table>
@@ -216,7 +198,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Intro Python continued</td> <td>Intermediate Python continued</td> </tr>
+      <tr> <td>09:00</td>  <td>Intro Python continued</td> </tr>
       <tr> <td>10:30</td>  <td colspan="2">Coffee</td> </tr>
       <tr> <td>12:00</td>  <td colspan="2">Lunch break</td> </tr>
       <tr> <td>13:00</td>  <td colspan="2">Version control with Git</td> </tr>
@@ -242,17 +224,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 {% if page.etherpad1 %}
 <p id="etherpad1">
-  <strong>Etherpad #1:</strong> <a href="{{page.etherpad1}}">{{page.etherpad1}}</a>.
+  <strong>Etherpad:</strong> <a href="{{page.etherpad1}}">{{page.etherpad1}}</a>.
   <br/>
-  Room #1 (Novice) will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
-{% endif %}
-
-{% if page.etherpad2 %}
-<p id="etherpad2">
-  <strong>Etherpad #2:</strong> <a href="{{page.etherpad2}}">{{page.etherpad2}}</a>.
-  <br/>
-  Room #2 (Advanced Beginner) will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
 
@@ -278,7 +252,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <h2 id="syllabus">Syllabus</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3 id="syllabus-shell">The Unix Shell</h3>
     <ul>
       <li>Files and directories</li>
@@ -290,35 +264,18 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-python">Introduction to Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Loops and conditionals</li>
-      <li>Creating and using functions</li>
-      <li>Defensive programming</li>
-      <li>Writing command line scripts with Python</li>
-      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-intermediate_python">Intermediate Scientific Python</h3>
+  <div class="col-md-4">
+    <h3 id="syllabus-python">Introduction to Scientific Python</h3>
     <ul>
       <li>Reading and manipulating tabular data</li>
       <li>Visualization and plotting</li>
       <li>Modularization and documentation</li>
       <li>Defensive programming</li>
       <li>Writing command line scripts with Python</li>
-      <li>Multiprocessing</li>
       <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3 id="syllabus-git">Version Control with Git</h3>
     <ul>
       <li>Creating a repository</li>
@@ -569,7 +526,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     </p>
 
     <p>
-      We will teach Python using the IPython notebook, a programming environment
+      We will teach Python using the Jupyter notebook, a programming environment
       that runs in a web browser. For this to work you will need a reasonably
       up-to-date browser. The current versions of the Chrome, Safari and
       Firefox browsers are all <a
